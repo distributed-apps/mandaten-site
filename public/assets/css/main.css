@@ -1702,8 +1702,8 @@
 		border: solid 1px;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
-		margin: 0 0.25em;
-		padding: 0.25em 0.65em;
+		margin: 0 0.55em;
+		padding: 0.55em 0.65em;
 	}
 
 	pre {
@@ -1759,16 +1759,16 @@
 	}
 
 	blockquote {
-		border-left-color: rgba(144, 144, 144, 0.2);
+		border-left-color: rgba(144, 144, 144, 0.5);
 	}
 
 	code {
 		background: rgba(144, 144, 144, 0.075);
-		border-color: rgba(144, 144, 144, 0.2);
+		border-color: rgba(144, 144, 144, 0.5);
 	}
 
 	hr {
-		border-bottom-color: rgba(144, 144, 144, 0.2);
+		border-bottom-color: rgba(144, 144, 144, 0.5);
 	}
 
 /* Box */
@@ -1793,7 +1793,7 @@
 		}
 
 	.box {
-		border-color: rgba(144, 144, 144, 0.2);
+		border-color: rgba(144, 144, 144, 0.5);
 	}
 
 /* Button */
@@ -1807,10 +1807,10 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+		-webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+		-ms-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+		transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 		border-radius: 4px;
 		border: 0;
 		cursor: pointer;
@@ -1818,7 +1818,7 @@
 		font-size: 0.8em;
 		font-weight: normal;
 		height: 4.1em;
-		letter-spacing: 0.25em;
+		letter-spacing: 0.55em;
 		line-height: 4.25em;
 		padding: 0 3em;
 		text-align: center;
@@ -1883,7 +1883,7 @@
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.2);
+		box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5);
 		color: #707070 !important;
 	}
 
@@ -1912,7 +1912,7 @@
 		button:disabled,
 		.button.disabled,
 		.button:disabled {
-			background-color: rgba(144, 144, 144, 0.2);
+			background-color: rgba(144, 144, 144, 0.5);
 		}
 
 		input[type="submit"].special,
@@ -2185,7 +2185,7 @@
 	select,
 	textarea {
 		background: rgba(144, 144, 144, 0.075);
-		border-color: rgba(144, 144, 144, 0.2);
+		border-color: rgba(144, 144, 144, 0.5);
 	}
 
 		input[type="text"]:focus,
@@ -2198,7 +2198,7 @@
 		}
 
 	.select-wrapper:before {
-		color: rgba(144, 144, 144, 0.2);
+		color: rgba(144, 144, 144, 0.5);
 	}
 
 	input[type="checkbox"] + label,
@@ -2209,7 +2209,7 @@
 		input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
 			background: rgba(144, 144, 144, 0.075);
-			border-color: rgba(144, 144, 144, 0.2);
+			border-color: rgba(144, 144, 144, 0.5);
 		}
 
 	input[type="checkbox"]:checked + label:before,
@@ -2294,7 +2294,7 @@
 			}
 
 	.icon.major {
-		border-color: rgba(144, 144, 144, 0.2);
+		border-color: rgba(144, 144, 144, 0.5);
 	}
 
 		.icon.major:before {
@@ -2326,13 +2326,13 @@
 		.image.left {
 			float: left;
 			margin: 0 2.5em 2em 0;
-			top: 0.25em;
+			top: 0.55em;
 		}
 
 		.image.right {
 			float: right;
 			margin: 0 0 2em 2.5em;
-			top: 0.25em;
+			top: 0.55em;
 		}
 
 		.image.fit {
@@ -2451,7 +2451,7 @@
 		}
 
 	.image-circles .images > *:before {
-		box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.2);
+		box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5);
 	}
 
 /* List */
@@ -2463,7 +2463,7 @@
 	}
 
 		ol li {
-			padding-left: 0.25em;
+			padding-left: 0.55em;
 		}
 
 	ul {
@@ -2631,7 +2631,7 @@
 		}
 
 	ul.alt li {
-		border-top-color: rgba(144, 144, 144, 0.2);
+		border-top-color: rgba(144, 144, 144, 0.5);
 	}
 
 /* Section/Article */
@@ -2804,7 +2804,7 @@
 		}
 
 	.spotlights section {
-		border-top-color: rgba(144, 144, 144, 0.2);
+		border-top-color: rgba(144, 144, 144, 0.5);
 	}
 
 /* Table */
@@ -2871,7 +2871,7 @@
 			}
 
 	table tbody tr {
-		border-color: rgba(144, 144, 144, 0.2);
+		border-color: rgba(144, 144, 144, 0.5);
 	}
 
 		table tbody tr:nth-child(2n + 1) {
@@ -2883,15 +2883,15 @@
 	}
 
 	table thead {
-		border-bottom-color: rgba(144, 144, 144, 0.2);
+		border-bottom-color: rgba(144, 144, 144, 0.5);
 	}
 
 	table tfoot {
-		border-top-color: rgba(144, 144, 144, 0.2);
+		border-top-color: rgba(144, 144, 144, 0.5);
 	}
 
 	table.alt tbody tr td {
-		border-color: rgba(144, 144, 144, 0.2);
+		border-color: rgba(144, 144, 144, 0.5);
 	}
 
 /* Wrapper */
@@ -3057,7 +3057,7 @@
 
 	#header {
 		background-color: #ffffff;
-		border-bottom: solid 1px rgba(144, 144, 144, 0.2);
+		border-bottom: solid 1px rgba(144, 144, 144, 0.5);
 		cursor: default;
 		height: 3.25em;
 		left: 0;
@@ -3086,14 +3086,14 @@
 			}
 
 		#header > a {
-			-moz-transition: color 0.2s ease-in-out;
-			-webkit-transition: color 0.2s ease-in-out;
-			-ms-transition: color 0.2s ease-in-out;
-			transition: color 0.2s ease-in-out;
+			-moz-transition: color 0.5s ease-in-out;
+			-webkit-transition: color 0.5s ease-in-out;
+			-ms-transition: color 0.5s ease-in-out;
+			transition: color 0.5s ease-in-out;
 			color: inherit;
 			display: inline-block;
 			font-size: 0.8em;
-			letter-spacing: 0.25em;
+			letter-spacing: 0.55em;
 			padding: 0 0.75em;
 			text-decoration: none;
 			text-transform: uppercase;
@@ -3120,7 +3120,7 @@
 				}
 
 			#header > a + a[href="#menu"]:last-child {
-				border-left: solid 1px rgba(144, 144, 144, 0.2);
+				border-left: solid 1px rgba(144, 144, 144, 0.5);
 				padding-left: 2em;
 				margin-left: 1em;
 			}
@@ -3136,7 +3136,7 @@
 				}
 
 					#header > a + a[href="#menu"]:last-child {
-						margin-left: 0.25em;
+						margin-left: 0.55em;
 						padding-left: 1em;
 					}
 
@@ -3218,7 +3218,7 @@
 	@media screen and (max-width: 736px) {
 
 		#header.alt {
-			top: 0.25em;
+			top: 0.55em;
 			left: 1.5em;
 			width: calc(100% - 3em);
 		}
@@ -3250,7 +3250,7 @@
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
 		background: #ffffff;
-		border-left: solid 1px rgba(144, 144, 144, 0.2);
+		border-left: solid 1px rgba(144, 144, 144, 0.5);
 		box-shadow: none;
 		height: 100%;
 		max-width: 80%;
@@ -3279,7 +3279,7 @@
 
 					#menu > ul.links > li > a:not(.button) {
 						border: 0;
-						border-top: solid 1px rgba(144, 144, 144, 0.2);
+						border-top: solid 1px rgba(144, 144, 144, 0.5);
 						color: inherit;
 						display: block;
 						line-height: 3.5em;
@@ -3370,10 +3370,10 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: -moz-linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
-		background-image: linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
@@ -3511,7 +3511,7 @@
 			#banner .inner h2 {
 				font-size: 2.75em;
 				margin-bottom: 0;
-				margin-top: -0.25em;
+				margin-top: -0.55em;
 				line-height: 1.3;
 			}
 
@@ -3671,10 +3671,10 @@
 		background-color: #303639;
 		color: #ffffff;
 		padding: 7em 0 5em 0 ;
-		background-image: -moz-linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
-		background-image: linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
@@ -3817,7 +3817,7 @@
 
 				#footer .links li a {
 					font-size: 0.8em;
-					letter-spacing: 0.25em;
+					letter-spacing: 0.55em;
 					text-decoration: none;
 					text-transform: uppercase;
 				}
@@ -3954,10 +3954,10 @@
 		#main > header {
 			background-color: #303639;
 			color: #ffffff;
-			background-image: -moz-linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
-			background-image: -webkit-linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
-			background-image: -ms-linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
-			background-image: linear-gradient(to top, rgba(48, 54, 57, 0.2), rgba(48, 54, 57, 0.2)), url("../../images/banner.jpg");
+			background-image: -moz-linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
+			background-image: -webkit-linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
+			background-image: -ms-linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
+			background-image: linear-gradient(to top, rgba(48, 54, 57, 0.5), rgba(48, 54, 57, 0.5)), url("../../images/banner.jpg");
 			background-attachment: fixed;
 			background-position: center;
 			background-size: cover;
