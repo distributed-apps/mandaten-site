@@ -1,0 +1,6 @@
+ version: '3'
+ services:
+   mandaten-site:
+     build: .
+     ports:
+      - "8080:8080"
