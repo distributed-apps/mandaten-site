@@ -1,176 +1,136 @@
 ///
-/// Prototype by Pixelarity
+/// Phantom by Pixelarity
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
 
 /* Header */
 
-	body {
-		padding-top: 3.125em;
-	}
-
-	@include keyframes('reveal-header') {
-		0% { top: -4em; opacity: 0; }
-		100% { top: 0; opacity: 1; }
-	}
-
 	#header {
-		background-color: _palette(bg);
-		border-bottom: solid 1px _palette(border);
-		cursor: default;
-		height: 3.25em;
-		left: 0;
-		line-height: 3.25em;
-		position: fixed;
-		text-align: right;
-		top: 0;
-		width: 100%;
-		z-index: _misc(z-index-base) + 1;
+		@include padding(5em, 0, (3em, 0, -5em, 0));
 
-		> h1 {
-			color: _palette(fg-bold);
-			display: inline-block;
-			height: inherit;
-			left: 1.25em;
-			line-height: inherit;
-			margin: 0;
-			padding: 0;
-			position: absolute;
-			top: 0;
-
-			a {
-				font-size: 1.25em;
-			}
-		}
-
-		> a {
-			@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
+		.logo {
+			display: block;
+			border-bottom: 0;
 			color: inherit;
-			display: inline-block;
-			font-size: 0.8em;
-			letter-spacing: _font(kerning-alt);
-			padding: 0 0.75em;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing);
+			margin: 0 0 (_size(element-margin) * 1.25) 0;
 			text-decoration: none;
 			text-transform: uppercase;
+			display: inline-block;
 
-			&[href="#menu"] {
-				@include icon;
-				-webkit-tap-highlight-color: rgba(0,0,0,0);
-
-				&:before {
-					content: '\f0c9';
-					float: right;
-					margin: 0 0 0 0.75em;
-				}
+			> * {
+				display: inline-block;
+				vertical-align: middle;
 			}
 
-			& + a[href="#menu"]:last-child {
-				border-left: solid 1px _palette(border);
-				padding-left: 2em;
-				margin-left: 1em;
-			}
+			.symbol {
+				margin-right: 0.65em;
 
-			&:last-child {
-				padding-right: 1.25em;
-			}
-
-			@include breakpoint(small) {
-				padding: 0 0.5em;
-
-				& + a[href="#menu"]:last-child {
-					margin-left: 0.25em;
-					padding-left: 1em;
-				}
-
-				&:last-child {
-					padding-right: 1em;
+				img {
+					display: block;
+					width: 2em;
+					height: 2em;
 				}
 			}
 		}
 
-		& + #banner {
-			margin-top: -3.125em;
-		}
+		nav {
+			position: fixed;
+			right: 2em;
+			top: 2em;
+			z-index: _misc(z-index-base);
 
-		&.reveal {
-			@include vendor('animation', 'reveal-header 0.5s ease');
-		}
+			ul {
+				@include vendor('display', 'flex');
+				@include vendor('align-items', 'center');
+				list-style: none;
+				margin: 0;
+				padding: 0;
 
-		&.alt {
-			@include vendor('animation', 'none');
-			background-color: transparent;
-			box-shadow: 0 1px 0 0 _palette(accent2, border);
-			color: _palette(accent2, fg);
-			position: absolute;
-			top: (_size(section-spacing) - 1em);
-			left: _size(section-spacing);
-			width: calc(100% - #{_size(section-spacing) * 2});
+				li {
+					display: block;
+					padding: 0;
 
-			> h1 {
-				color: _palette(accent2, fg-bold);
-				left: 0;
-			}
+					a {
+						display: block;
+						position: relative;
+						height: 3em;
+						line-height: 3em;
+						padding: 0 1.5em;
+						background-color: transparentize(_palette(bg), 0.5);
+						border-radius: _size(border-radius);
+						border: 0;
+						font-size: 0.8em;
+						font-weight: _font(weight-bold);
+						letter-spacing: _font(letter-spacing);
+						text-transform: uppercase;
+					}
 
-			> a {
-				& + a[href="#menu"]:last-child {
-					border-left-color: _palette(accent2, border);
+					a[href="#menu"] {
+						-webkit-tap-highlight-color: transparent;
+						width: 4em;
+						text-indent: 4em;
+						font-size: 1em;
+						overflow: hidden;
+						padding: 0;
+						white-space: nowrap;
+
+						&:before, &:after {
+							@include vendor('transition', 'opacity #{_duration(transition)} ease');
+							content: '';
+							display: block;
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: 2em 2em;
+						}
+
+						&:before {
+							background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 8px; stroke: #{_palette(accent1)}; }</style><line x1="0" y1="25" x2="100" y2="25" /><line x1="0" y1="50" x2="100" y2="50" /><line x1="0" y1="75" x2="100" y2="75" /></svg>');
+							opacity: 0;
+						}
+
+						&:after {
+							background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 8px; stroke: #{_palette(fg)}; }</style><line x1="0" y1="25" x2="100" y2="25" /><line x1="0" y1="50" x2="100" y2="50" /><line x1="0" y1="75" x2="100" y2="75" /></svg>');
+							opacity: 1;
+						}
+
+						&:hover {
+							&:before {
+								opacity: 1;
+							}
+
+							&:after {
+								opacity: 0;
+							}
+						}
+					}
 				}
+			}
+		}
 
-				&:last-child {
-					padding-right: 0;
+		@include breakpoint(small) {
+			@include padding(3em, 0, (1em, 0, -3em, 0));
+
+			nav {
+				right: 0.5em;
+				top: 0.5em;
+
+				ul {
+					li {
+						a[href="#menu"] {
+							&:before, &:after {
+								background-size: 1.5em 1.5em;
+							}
+						}
+					}
 				}
-			}
-		}
-	}
-
-	@include breakpoint(large) {
-		#header {
-			&.alt {
-				$section-spacing: _size(section-spacing) * 0.75;
-
-				top: ($section-spacing - 1em);
-				left: $section-spacing;
-				width: calc(100% - #{$section-spacing * 2});
-			}
-		}
-	}
-
-	@include breakpoint(medium) {
-		body {
-			padding-top: 44px;
-		}
-
-		#header {
-			height: 44px;
-			line-height: 44px;
-
-			> h1 {
-				left: 1em;
-
-				a {
-					font-size: 1em;
-				}
-			}
-		}
-	}
-
-	@include breakpoint(small) {
-		#header {
-			&.alt {
-				top: 0.25em;
-				left: 1.5em;
-				width: calc(100% - 3em);
-			}
-		}
-	}
-
-	@include breakpoint(xsmall) {
-		#header {
-			min-width: 320px;
-
-			&.alt {
-				min-width: 0;
 			}
 		}
 	}

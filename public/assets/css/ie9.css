@@ -1,162 +1,40 @@
 /*
-	Prototype by Pixelarity
+	Phantom by Pixelarity
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 */
 
-/* Image Circles */
+/* Tiles */
 
-	.image-circles .images:after {
+	.tiles:after {
 		content: '';
 		display: block;
 		clear: both;
 	}
 
-	.image-circles .images > * {
-		float: left;
-		width: 45%;
-	}
-
-/* Features */
-
-	.features:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	.features section {
+	.tiles article {
 		float: left;
 	}
 
-/* Spotlights */
-
-	.spotlights section:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	.spotlights section .image {
-		float: left;
-		margin-right: 4em;
-	}
-
-	.spotlights section .content {
-		width: auto;
-	}
-
-/* Wrapper */
-
-	.wrapper.split > .inner:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	.wrapper.split > .inner > * {
-		float: left;
-		margin: 0 !important;
-	}
-
-	.wrapper.split > .inner > :nth-child(2n - 1) {
-		margin-right: 0;
-		padding-right: 2em;
-	}
-
-	.wrapper.split > .inner > :nth-child(2n) {
-		padding-left: 0;
-		padding-left: 2em;
-	}
-
-/* Banner */
-
-	#banner {
-		padding: 13.5em 0 7em 0 ;
-		background-image: url("../../images/banner.jpg");
-		height: auto;
-		min-height: 0;
-		position: relative;
-	}
-
-		#banner:before {
-			background-color: #303639;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0.2;
-			position: absolute;
-			top: 0;
-			width: 100%;
+		.tiles article > a {
+			padding-top: 50%;
+			margin-top: -1.75em;
 		}
 
-		#banner .inner {
-			margin: 0 auto;
-			overflow: hidden;
-			position: relative;
-			text-align: center;
-			z-index: 1;
+		body:not(.is-touch) .tiles article:hover > .image {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
 		}
-
-			#banner .inner .content {
-				display: inline-block;
-			}
-
-			#banner .inner .actions {
-				display: inline-block;
-			}
 
 /* Footer */
 
-	#footer {
-		background-image: url("../../images/banner.jpg");
-		position: relative;
+	#footer > .inner section {
+		float: left;
 	}
 
-		#footer:before {
-			background-color: #303639;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0.2;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
-		#footer > .inner {
-			display: block;
-			position: relative;
-			z-index: 1;
-		}
-
-			#footer > .inner > * {
-				width: 100%;
-				text-align: center !important;
-			}
-
-/* Main */
-
-	#main > header {
-		background-image: url("../../images/banner.jpg");
-		position: relative;
+	#footer > .inner .copyright {
+		clear: both;
+		padding-top: 4em;
 	}
-
-		#main > header:before {
-			background-color: #303639;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0.2;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
-		#main > header > * {
-			position: relative;
-			z-index: 1;
-		}
